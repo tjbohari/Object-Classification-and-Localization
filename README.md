@@ -13,13 +13,13 @@ into particular category.
 - Preprocessing is done using ImageDataGenerator from tensorflow. 
 
 ### Model Training
-- Model is trained using the dataset prepared.
+- Inception V3 model is trained using the dataset prepared.
 - An accuracy of 99% is achieved with only 9 epochs.
 
 ## Object Localization
 
 To perform object localization, technique of [Class Activation Mapping](http://cnnlocalization.csail.mit.edu/) is used to activate the neurons with high weights. 
-The CAM model highlights the neurons with higher weights in the image which aids in localizing the object in the image.
+The CAM model highlights the neurons with higher weights in the image which aids in classifying the object in the image.
 In our case, we have calculated correlation between neurons and adjusted the weights accordingly for CAM. We were able to successfully localize the objects in the images.
 
 # Contributors
